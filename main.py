@@ -1,10 +1,10 @@
 import openpyxl as xl
-from openpyxl.chart import BarChart, Reference
+from playsound import playsound
 
-# ### in terminal do: pip install openpyxl
+playsound('correct-answer-2.mp3')
+playsound('INCORRECT.mp3')
 exel_file = xl.load_workbook('EnglishData.xlsx')
 excel_sheet = exel_file['Sheet1']
-
 def find_is_string_exist(user_input2, list1):
     for word_from_list in list1:
         if user_input2 == word_from_list:
